@@ -1,5 +1,6 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
+import {Link} from 'react-router-dom';
 import './styles.css';
 
 const Landing = () => {
@@ -18,7 +19,10 @@ const Landing = () => {
         <div className="w-96 bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col space-y-4 text-center">
           <h2 className="text-3xl text-white font-bold">Cappi Finance</h2>
           <p className="text-base text-gray-300">A stable USDC-based project offering daily staking rewards. Join our whitelist and be the first to access the platform.</p>
-          <div className="bg-gradient-to-r from-purple-600 to-pink-500 py-2 px-4 rounded-lg text-white text-lg font-semibold">APP COMING SOON</div>
+          <Link to="/App" className="bg-gradient-to-r from-purple-600 to-pink-500 py-2 px-4 rounded-lg text-white text-lg font-semibold">
+            Launch App
+          </Link>
+          //<div className="bg-gradient-to-r from-purple-600 to-pink-500 py-2 px-4 rounded-lg text-white text-lg font-semibold">APP COMING SOON</div>
           <a href="https://forms.gle/9CKjB4PDa3qJxCwE9" className="text-sm text-pink-300 hover:text-pink-500 transition">WHITELIST REGISTRATION</a>
         </div>
       </div>
