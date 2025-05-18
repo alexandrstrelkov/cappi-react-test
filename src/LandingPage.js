@@ -5,15 +5,15 @@ const LandingPage = () => {
   return (
     <div class="container">
         <div class="header">Cappi Finance</div>
-        <div class="subheader">Earn stable income in USDC with daily staking rewards.</div>
+        <div class="subheader">Earn stable income in USDC with daily rewards.</div>
 
         <div class="content-box">
-            <p><Link to="/app" className="launch-button">App Coming Soon!</Link></p>
-            <a href="https://forms.gle/9CKjB4PDa3qJxCwE9" className="whitelist" target="_blank" rel="noopener noreferrer">Whitelist Registration</a>
+            <p><Link to="/app" class="button">App Coming Soon!</Link></p>
+            <a href="https://forms.gle/9CKjB4PDa3qJxCwE9" class="whitelist-text" target="_blank" rel="noopener noreferrer">Whitelist Registration</a>
         </div>
 
         <div class="footer-text">
-            Cappi Finance — a crypto project with fixed USDC income and daily staking rewards. Join now and secure your daily earnings.
+            Cappi Finance — a crypto project with USDC income with daily staking rewards. Join now and secure your daily earnings.
         </div>
 
         <div class="social-links">
