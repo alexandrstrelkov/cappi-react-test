@@ -8,8 +8,8 @@ const LandingPage = () => {
         <div class="subheader">Earn stable income in USDC with daily staking rewards.</div>
 
         <div class="content-box">
-            <a href="#" class="button">Launch App (Coming Soon)</a>
-            <a href="#" class="whitelist-text">Join Whitelist</a>
+            <p><Link to="/app" className="launch-button">App Coming Soon!</Link></p>
+            <a href="https://forms.gle/9CKjB4PDa3qJxCwE9" className="whitelist" target="_blank" rel="noopener noreferrer">Whitelist Registration</a>
         </div>
 
         <div class="footer-text">
