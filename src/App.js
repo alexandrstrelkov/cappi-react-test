@@ -3,6 +3,7 @@ import "./style.css";  // Подключение style.css
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import AppPage from "./AppPage";
+import "./tailwind.css";
 
 function App() {
   return (
