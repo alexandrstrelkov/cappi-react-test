@@ -1,26 +1,27 @@
-import React from 'react';
-import {Helmet} from 'react-helmet';
+import React from "react";
 
 const AppPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-700 via-purple-500 to-pink-500 p-6 text-white">
-      <Helmet>
-        <title>Cappi Finance | Dashboard</title>
-      </Helmet>
-      <div className="max-w-4xl mx-auto space-y-6">
-        <h1 className="text-4xl font-bold">Cappi Finance Dashboard</h1>
-        <p className="text-lg">Manage your assets, track your staking rewards, and mint new tokens.</p>
+    <div className="page-container">
+      <div className="content">
+        <h1 className="title">App Dashboard</h1>
+        <p className="subtitle">
+          Monitor your staking rewards and manage your assets.
+        </p>
 
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold mb-4">Your Portfolio</h2>
-          <p>Total Staked: $0 USDC</p>
-          <p>Daily Rewards: $0 USDC</p>
-          <p>Liquidity Provided: $0 USDC</p>
+        <div className="content-block">
+          <h2>Your Staking Rewards</h2>
+          <p>USDC Rewards: 0.05% - 0.1% daily</p>
         </div>
 
-        <div className="flex space-x-4">
-          <button className="bg-pink-500 py-2 px-4 rounded-lg">Mint Tokens</button>
-          <button className="bg-purple-600 py-2 px-4 rounded-lg">Stake Tokens</button>
+        <div className="content-block">
+          <h2>Mint Tokens</h2>
+          <p>Mint your tokens and start earning.</p>
+        </div>
+
+        <div className="content-block">
+          <h2>Stake Tokens</h2>
+          <p>Stake tokens to receive daily rewards in USDC.</p>
         </div>
       </div>
     </div>
