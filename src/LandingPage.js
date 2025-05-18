@@ -9,7 +9,6 @@ const LandingPage = () => {
         <p className="subtitle">
           Earn stable income in USDC with daily staking rewards.
         </p>
-        <div className="coming-soon">APP COMING SOON</div>
         <Link to="/app" className="launch-button">
           Launch App
         </Link>
@@ -41,6 +40,9 @@ const LandingPage = () => {
           Telegram
         </a>
       </div>
+          <div className="text-center text-gray-300 text-sm">
+        Cappi Finance — a crypto project with fixed USDC income and daily staking rewards. Join now and secure your daily earnings.
+          </div>
     </div>
   );
 };
