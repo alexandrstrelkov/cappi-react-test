@@ -10,9 +10,8 @@ const LandingPage = () => {
           Earn stable income in USDC with daily staking rewards.
         </p>
         <p><Link to="/app" className="launch-button">
-          Launch App
+          App Coming Soon!
         </Link></p>
-        <div className="bg-gradient-to-r from-purple-600 to-pink-500 py-2 px-4 rounded-lg text-white text-lg font-semibold mb-2">APP COMING SOON</div>
         <a
           href="https://forms.gle/9CKjB4PDa3qJxCwE9"
           className="whitelist"
