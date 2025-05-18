@@ -9,9 +9,10 @@ const LandingPage = () => {
         <p className="subtitle">
           Earn stable income in USDC with daily staking rewards.
         </p>
-        <Link to="/app" className="launch-button">
+        <p><Link to="/app" className="launch-button">
           Launch App
-        </Link>
+        </Link></p>
+        <div className="bg-gradient-to-r from-purple-600 to-pink-500 py-2 px-4 rounded-lg text-white text-lg font-semibold mb-2">APP COMING SOON</div>
         <a
           href="https://forms.gle/9CKjB4PDa3qJxCwE9"
           className="whitelist"
@@ -23,11 +24,12 @@ const LandingPage = () => {
       </div>
 
       <div className="footer">
-        <a
-          href="https://medium.com/@cappifi24/cappifi-capi-whitepaper-roadmap-51b2ae85fc54"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          
+        <div className="text-center text-gray-300 text-sm">
+          Cappi Finance — a crypto project with fixed USDC income and daily staking rewards. Join now and secure your daily earnings.
+        </div>
+            
+        <a href="https://medium.com/@cappifi24/cappifi-capi-whitepaper-roadmap-51b2ae85fc54" target="_blank" rel="noopener noreferrer">
           Whitepaper
         </a>
         <a href="https://x.com/CappiFinance" target="_blank" rel="noopener noreferrer">
@@ -40,9 +42,6 @@ const LandingPage = () => {
           Telegram
         </a>
       </div>
-          <div className="text-center text-gray-300 text-sm">
-        Cappi Finance — a crypto project with fixed USDC income and daily staking rewards. Join now and secure your daily earnings.
-          </div>
     </div>
   );
 };
