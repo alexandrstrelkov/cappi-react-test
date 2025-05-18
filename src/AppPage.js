@@ -1,35 +1,23 @@
-import React from 'react';
-import {Helmet} from 'react-helmet';
-import './style.css';
+import React from "react";
 
 const AppPage = () => {
   return (
-    <div className="landing-container">
-      <Helmet>
-        <title>App - Cappi Finance</title>
-      </Helmet>
+    <div className="page-container">
+      <div className="content">
+        <h1 className="title">Dashboard</h1>
+        <p className="subtitle">
+          Monitor your staking rewards and manage your assets.
+        </p>
 
-      <div className="landing-header">
-        <h1 className="landing-title">Welcome to Cappi Finance App</h1>
-        <p className="landing-subtitle">Monitor your earnings, mint tokens, and stake USDC</p>
-      </div>
+        <div className="content-block">
+          <h2>Your Staking Rewards</h2>
+          <p>USDC Rewards: 0.05% - 0.1% daily</p>
+        </div>
 
-      <div className="info-block">
-        <h2 className="info-title">Liquidity Overview</h2>
-        <p className="info-text">Check your liquidity, staking rewards, and daily earnings.</p>
-        <div className="app-coming-soon">Feature Coming Soon</div>
-      </div>
-
-      <div className="info-block">
-        <h2 className="info-title">Mint Tokens</h2>
-        <p className="info-text">Mint Cappi tokens with USDC and start earning daily rewards.</p>
-        <div className="app-coming-soon">Feature Coming Soon</div>
-      </div>
-
-      <div className="info-block">
-        <h2 className="info-title">Stake USDC</h2>
-        <p className="info-text">Stake your USDC to receive fixed daily returns in Cappi tokens.</p>
-        <div className="app-coming-soon">Feature Coming Soon</div>
+        <div className="content-block">
+          <h2>Stake Tokens</h2>
+          <p>Stake tokens to receive daily rewards.</p>
+        </div>
       </div>
     </div>
   );
