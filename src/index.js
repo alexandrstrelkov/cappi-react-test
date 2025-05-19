@@ -1,7 +1,7 @@
 import "./output.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";  // Подключение index.css
+//import "./index.css";  // Подключение index.css
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
