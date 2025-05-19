@@ -16,6 +16,10 @@ const LandingPage = () => {
             Cappi Finance — a crypto project with USDC income with daily staking rewards. Join now and secure your daily earnings.
         </div>
 
+    <div className="bg-blue-500 text-white p-4 rounded-lg">
+      Tailwind работает!
+    </div>
+
         <div class="social-links">
           <a href="https://medium.com/@cappifi24/cappifi-capi-whitepaper-roadmap-51b2ae85fc54" target="_blank" rel="noopener noreferrer">Whitepaper</a>
           <a href="https://x.com/CappiFinance" target="_blank" rel="noopener noreferrer">Twitter (X)</a>
