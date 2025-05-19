@@ -19,6 +19,9 @@ const LandingPage = () => {
     <div className="bg-blue-500 text-white p-4 rounded-lg">
       Tailwind работает!
     </div>
+    <h1 class="text-4xl sm:text-5xl font-bold mb-6 neon-text gradient-text bg-gradient-to-r from-purple-300 to-pink-300 text-center orbitron">
+        Earn Stable Daily Rewards with Cappi Finance
+    </h1>
 
         <div class="social-links">
           <a href="https://medium.com/@cappifi24/cappifi-capi-whitepaper-roadmap-51b2ae85fc54" target="_blank" rel="noopener noreferrer">Whitepaper</a>
