@@ -4,14 +4,6 @@ import './style.css';
 
 const LandingPage = () => {
   return (
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Cappi Finance - Stable Daily Rewards</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
-    </head>
   <body class="min-h-screen flex flex-col">
     <!-- Header with soft glow -->
     <header class="py-6 px-4 sm:px-8 lg:px-16 flex justify-between items-center bg-gray-900/50 backdrop-blur-sm header-glow">
