@@ -6,7 +6,7 @@ const LandingPage = () => {
   useHoverEffects();
   return (
 
-    <body class="min-h-screen flex flex-col">
+    <div class="min-h-screen flex flex-col">
     <header class="py-6 px-4 sm:px-8 lg:px-16 flex justify-between items-center bg-gray-900/50 backdrop-blur-sm header-glow">
         <div class="flex items-center space-x-2 glow-effect">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -60,7 +60,7 @@ const LandingPage = () => {
             </div>
         </div>
     </footer>
-</body>
+</div>
     
   );
 };
