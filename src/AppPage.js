@@ -143,7 +143,7 @@ function App() {
                 <a href="#" class="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
             </div>
         </div>
-    </footer>
+    </footer></>
   );
 }
 
