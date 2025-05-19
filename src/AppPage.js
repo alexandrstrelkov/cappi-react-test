@@ -1,12 +1,13 @@
 import {useEffect} from "react";
 import "./index.css";
 import "./app-style.css";
-import "./app-script.js";
 
 function App() {
   useEffect(() => {
     import("./app-script.js").then((module) => {
-      if (module.default) module.default();
+      if (module.default) {
+        module.default(); // initScripts()
+      }
     });
   }, []);
 
@@ -21,7 +22,7 @@ function App() {
             </div>
             <span className="text-xl font-bold orbitron">Cappi Finance</span>
         </div>
-        <button className="px-6 py-2 rounded-lg btn-primary font-medium orbitron">
+        <button className="px-6 py-2 rounded-lg btn-primary font-medium orbitron" data-connect-wallet>
             Connect Wallet
         </button>
     </header>
@@ -39,9 +40,9 @@ function App() {
                             <p className="text-3xl font-bold">8.24<span className="text-xl">%</span></p>
                         </div>
                         <div className="flex space-x-2">
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm active">1W</button>
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm">1M</button>
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm">ALL</button>
+                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm active" data-time-selector>1W</button>
+                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm" data-time-selector>1M</button>
+                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm" data-time-selector>ALL</button>
                         </div>
                     </div>
                     <div className="chart-container">
@@ -62,9 +63,9 @@ function App() {
                             <p className="text-3xl font-bold">$24.7<span className="text-xl">M</span></p>
                         </div>
                         <div className="flex space-x-2">
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm active">1W</button>
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm">1M</button>
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm">ALL</button>
+                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm active" data-time-selector>1W</button>
+                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm" data-time-selector>1M</button>
+                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm" data-time-selector>ALL</button>
                         </div>
                     </div>
                     <div className="chart-container">
@@ -85,7 +86,7 @@ function App() {
         <section>
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-2xl font-bold orbitron">Your Statistics</h2>
-                <button className="px-6 py-2 rounded-lg btn-primary font-medium orbitron">
+                <button className="px-6 py-2 rounded-lg btn-primary font-medium orbitron" data-connect-wallet>
                     Connect Wallet
                 </button>
             </div>
@@ -98,9 +99,9 @@ function App() {
                             <p className="text-3xl font-bold">$0.00</p>
                         </div>
                         <div className="flex space-x-2">
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm active">1W</button>
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm">1M</button>
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm">ALL</button>
+                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm active" data-time-selector>1W</button>
+                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm" data-time-selector>1M</button>
+                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm" data-time-selector>ALL</button>
                         </div>
                     </div>
                     <div className="chart-container">
@@ -117,12 +118,12 @@ function App() {
                             <p className="text-3xl font-bold">$0.00</p>
                             <p className="text-accent-secondary text-sm mt-1">+0.00% today</p>
                         </div>
-                        <button className="px-4 py-2 rounded-lg btn-secondary font-medium opacity-50 cursor-not-allowed">
+                        <button className="px-4 py-2 rounded-lg btn-secondary font-medium opacity-50 cursor-not-allowed" data-claim>
                             Claim
                         </button>
                     </div>
                     <div className="chart-container">
-                        <div className="absolute inset-0 flex items-center justify-center connect-wallet-text">
+                        <div className="absolute inset-0 flex items-center justify-center connect-wallet-text" data-connect-wallet>
                             Connect wallet to view data
                         </div>
                     </div>
