@@ -1,7 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import useHoverEffects from "./useHoverEffects";
 
 const LandingPage = () => {
+  useHoverEffects();
   return (
 
     <body class="min-h-screen flex flex-col">
@@ -58,33 +60,6 @@ const LandingPage = () => {
             </div>
         </div>
     </footer>
-
-    <script>
-        // Enhanced hover effects with glow
-        document.querySelectorAll('a, button').forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                el.style.transform = 'translateY(-2px)';
-                if(el.classList.contains('neon-accent') || el.classList.contains('social-icon')) {
-                    el.style.filter = 'drop-shadow(0 0 10px rgba(139, 92, 246, 0.6))';
-                }
-            });
-            el.addEventListener('mouseleave', () => {
-                el.style.transform = '';
-                el.style.filter = '';
-            });
-        });
-        
-        // Background animation
-        document.addEventListener('DOMContentLoaded', () => {
-            const body = document.querySelector('body');
-            let hue = 270;
-            
-            setInterval(() => {
-                hue = (hue + 0.1) % 360;
-                body.style.background = `linear-gradient(135deg, hsl(${Math.min(hue, 280)}, 70%, 45%) 0%, hsl(${Math.max((hue + 40) % 360, 330)}, 70%, 55%) 100%)`;
-            }, 50);
-        });
-    </script>
 </body>
     
   );
