@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
-      <!-- Header -->
     <header class="py-4 px-6 lg:px-12 flex justify-between items-center border-b border-gray-800">
         <div class="flex items-center space-x-3">
             <div class="w-10 h-10 rounded-full logo-gradient flex items-center justify-center">
@@ -28,14 +27,11 @@ function App() {
         </button>
     </header>
 
-    <!-- Main Content -->
     <main class="container mx-auto px-6 lg:px-12 py-8">
-        <!-- Global Stats Section -->
         <section class="mb-12">
             <h2 class="text-2xl font-bold mb-6 orbitron">Global Statistics</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <!-- Yield Card -->
                 <div class="stat-card p-6">
                     <div class="flex justify-between items-start mb-4">
                         <div>
@@ -59,7 +55,6 @@ function App() {
                     </div>
                 </div>
                 
-                <!-- TVL Card -->
                 <div class="stat-card p-6">
                     <div class="flex justify-between items-start mb-4">
                         <div>
@@ -87,7 +82,6 @@ function App() {
         
         <div class="divider my-8"></div>
         
-        <!-- Personal Stats Section -->
         <section>
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-2xl font-bold orbitron">Your Statistics</h2>
@@ -97,7 +91,6 @@ function App() {
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Your Investment Card -->
                 <div class="stat-card p-6">
                     <div class="flex justify-between items-start mb-4">
                         <div>
@@ -117,7 +110,6 @@ function App() {
                     </div>
                 </div>
                 
-                <!-- Your Rewards Card -->
                 <div class="stat-card p-6">
                     <div class="flex justify-between items-start mb-4">
                         <div>
@@ -139,7 +131,6 @@ function App() {
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="py-8 px-4 sm:px-8 lg:px-16 border-t border-gray-800/50 bg-gray-900/30 backdrop-blur-sm">
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0">
