@@ -11,7 +11,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+    <><div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
     <header class="py-4 px-6 lg:px-12 flex justify-between items-center border-b border-gray-800">
         <div class="flex items-center space-x-3">
             <div class="w-10 h-10 rounded-full logo-gradient flex items-center justify-center">
