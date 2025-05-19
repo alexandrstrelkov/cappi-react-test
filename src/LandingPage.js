@@ -44,7 +44,7 @@ const LandingPage = () => {
                     Launch App
                 </Link>
                 <button class="px-8 py-3 rounded-xl btn-secondary font-medium glow-effect orbitron">
-                    <a href="#" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+                    <a href="https://forms.gle/9CKjB4PDa3qJxCwE9" target="_blank" rel="noopener noreferrer">Whitepaper</a>
                 </button>
             </div>
         </div>
@@ -57,9 +57,9 @@ const LandingPage = () => {
             </div>
             
             <div class="flex space-x-6">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-300 transition hover:drop-shadow-[0_0_5px_rgba(183,148,244,0.5)]">Twitter</a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-300 transition hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.5)]">Medium</a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
+                <a href="https://x.com/@CappiFinance" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-300 transition hover:drop-shadow-[0_0_5px_rgba(183,148,244,0.5)]">Twitter</a>
+                <a href="https://medium.com/@CappiFI24" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-300 transition hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.5)]">Medium</a>
+                <a href="https://t.me/cappifi" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
             </div>
         </div>
     </footer>
