@@ -4,10 +4,9 @@ import "./app-style.css";
 import "./app-script.js";
 
 function App() {
-  useEffect(() 
-    // Скрипт подключается и запускается здесь
+  useEffect(() => {
     import("./app-script.js").then((module) => {
-      module.default();
+      if (module.default) module.default();
     });
   }, []);
 
