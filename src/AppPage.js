@@ -12,7 +12,7 @@ function App() {
   }, []);
 
   return (
-    <div><div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+    <><div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
     <header className="py-4 px-6 lg:px-12 flex justify-between items-center border-b border-gray-800">
         <div className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-full logo-gradient flex items-center justify-center">
@@ -46,13 +46,13 @@ function App() {
                         </div>
                     </div>
                     <div className="chart-container">
-                        <div className="chart-placeholder" style={{height: 70%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 50%; width: 90%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 80%; width: 95%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 65%; width: 85%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 90%; width: 100%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 75%; width: 92%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 60%; width: 88%}}></div>
+                        <div className="chart-placeholder" style={{height: "70%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "50%", width: "90%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "80%", width: "95%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "65%", width: "85%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "90%", width: "100%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "75%", width: "92%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "60%", width: "88%"}}></div>
                     </div>
                 </div>
                 
@@ -69,13 +69,13 @@ function App() {
                         </div>
                     </div>
                     <div className="chart-container">
-                        <div className="chart-placeholder" style={{height: 80%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 60%; width: 90%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 75%; width: 95%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 85%; width: 85%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 70%; width: 100%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 90%; width: 92%}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: 65%; width: 88%}}></div>
+                        <div className="chart-placeholder" style={{height: "80%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "60%", width: "90%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "75%", width: "95%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "85%", width: "85%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "70%", width: "100%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "90%", width: "92%"}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: "65%", width: "88%"}}></div>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@ function App() {
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
             </div>
         </div>
-    </footer></div>
+    </footer></>
   );
 }
 
