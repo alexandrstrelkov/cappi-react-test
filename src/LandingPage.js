@@ -26,7 +26,6 @@ const LandingPage = () => {
         </div>
     </header>
 
-    <!-- Main Content -->
     <main class="flex-grow container mx-auto px-4 sm:px-8 lg:px-16 py-12">
         <div class="content-box">
             <h1 class="text-4xl sm:text-5xl font-bold mb-6 neon-text gradient-text bg-gradient-to-r from-purple-300 to-pink-300 text-center orbitron">
@@ -46,7 +45,6 @@ const LandingPage = () => {
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="py-8 px-4 sm:px-8 lg:px-16 border-t border-gray-800/50 bg-gray-900/30 backdrop-blur-sm">
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0">
