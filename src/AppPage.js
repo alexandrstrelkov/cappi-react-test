@@ -6,7 +6,7 @@ import "./app-script.js";
 function App() {
   useEffect(() => {
     // Скрипт подключается и запускается здесь
-    import("./script.js").then((module) => {
+    import("./app-script.js").then((module) => {
       module.default();
     });
   }, []);
