@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-//import /style.css
+import /style.css
 
 const LandingPage = () => {
   return (
@@ -11,89 +11,7 @@ const LandingPage = () => {
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #7e22ce 0%, #ec4899 100%);
-            color: #e7e7e7;
-        }
-        
-        .orbitron {
-            font-family: 'Orbitron', sans-serif;
-        }
-        
-        .neon-text {
-            text-shadow: 0 0 12px rgba(183, 148, 244, 0.4);
-        }
-        
-        .neon-accent {
-            box-shadow: 0 0 15px 3px rgba(183, 148, 244, 0.3);
-        }
-        
-        .glow-effect {
-            filter: drop-shadow(0 0 8px rgba(183, 148, 244, 0.3));
-        }
-        
-        .gradient-text {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #2d1b69 0%, #3a1d7a 100%);
-        }
-        
-        .btn-primary {
-            background: linear-gradient(90deg, #8b5cf6 0%, #d946ef 100%);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(139, 92, 246, 0.5);
-        }
-        
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.08);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(183, 148, 244, 0.1);
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-1px);
-            box-shadow: 0 6px 20px rgba(183, 148, 244, 0.2);
-        }
-        
-        .social-icon {
-            transition: all 0.3s ease;
-            color: #a7a9be;
-        }
-        
-        .social-icon:hover {
-            color: #8b5cf6;
-            transform: translateY(-2px);
-            filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.4));
-        }
-        
-        .content-box {
-            background: rgba(26, 16, 61, 0.7);
-            border-radius: 20px;
-            padding: 40px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(139, 92, 246, 0.2);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .header-glow {
-            box-shadow: 0 4px 30px rgba(139, 92, 246, 0.1);
-        }
-    </style>
-</head>
+    </head>
 <body class="min-h-screen flex flex-col">
     <!-- Header with soft glow -->
     <header class="py-6 px-4 sm:px-8 lg:px-16 flex justify-between items-center bg-gray-900/50 backdrop-blur-sm header-glow">
