@@ -12,7 +12,7 @@ function App() {
   }, []);
 
   return (
-    <><div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+    <div><div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
     <header className="py-4 px-6 lg:px-12 flex justify-between items-center border-b border-gray-800">
         <div className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-full logo-gradient flex items-center justify-center">
@@ -144,7 +144,7 @@ function App() {
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
             </div>
         </div>
-    </footer></>
+    </footer></div>
   );
 }
 
