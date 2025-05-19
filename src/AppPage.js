@@ -12,12 +12,12 @@ function App() {
   }, []);
 
   return (
-    <><div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+    <div><div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
     <header className="py-4 px-6 lg:px-12 flex justify-between items-center border-b border-gray-800">
         <div className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-full logo-gradient flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
             </div>
             <span className="text-xl font-bold orbitron">Cappi Finance</span>
@@ -46,13 +46,13 @@ function App() {
                         </div>
                     </div>
                     <div className="chart-container">
-                        <div className="chart-placeholder" style="height: 70%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 50%; width: 90%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 80%; width: 95%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 65%; width: 85%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 90%; width: 100%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 75%; width: 92%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 60%; width: 88%"></div>
+                        <div className="chart-placeholder" style={{height: 70%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 50%; width: 90%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 80%; width: 95%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 65%; width: 85%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 90%; width: 100%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 75%; width: 92%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 60%; width: 88%}}></div>
                     </div>
                 </div>
                 
@@ -69,13 +69,13 @@ function App() {
                         </div>
                     </div>
                     <div className="chart-container">
-                        <div className="chart-placeholder" style="height: 80%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 60%; width: 90%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 75%; width: 95%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 85%; width: 85%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 70%; width: 100%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 90%; width: 92%"></div>
-                        <div className="chart-placeholder mt-1" style="height: 65%; width: 88%"></div>
+                        <div className="chart-placeholder" style={{height: 80%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 60%; width: 90%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 75%; width: 95%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 85%; width: 85%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 70%; width: 100%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 90%; width: 92%}}></div>
+                        <div className="chart-placeholder mt-1" style={{height: 65%; width: 88%}}></div>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@ function App() {
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
             </div>
         </div>
-    </footer></>
+    </footer></div>
   );
 }
 
