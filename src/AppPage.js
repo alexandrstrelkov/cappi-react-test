@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import {useEffect} from "react";
 import "./index.css";
 import "./app-style.css";
 import "./app-script.js";
