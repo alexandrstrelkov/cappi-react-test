@@ -44,7 +44,7 @@ const LandingPage = () => {
                     Launch App
                 </Link>
                 <button class="px-8 py-3 rounded-xl btn-secondary font-medium glow-effect orbitron">
-                    <a href="https://forms.gle/9CKjB4PDa3qJxCwE9" target="_blank" rel="noopener noreferrer">Whitepaper</a>
+                    <a href="https://medium.com/@cappifi24/cappifi-capi-whitepaper-roadmap-51b2ae85fc54" target="_blank" rel="noopener noreferrer">Whitepaper</a>
                 </button>
             </div>
         </div>
