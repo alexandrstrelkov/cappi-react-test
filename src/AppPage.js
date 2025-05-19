@@ -13,58 +13,147 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
-      {/* Header */}
-      <header className="py-4 px-6 lg:px-12 flex justify-between items-center border-b border-gray-800">
-        <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-white"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-          </div>
-          <span className="text-xl font-bold">Cappi Finance</span>
+      <!-- Header -->
+    <header class="py-4 px-6 lg:px-12 flex justify-between items-center border-b border-gray-800">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full logo-gradient flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <span class="text-xl font-bold orbitron">Cappi Finance</span>
         </div>
-        <button className="px-6 py-2 rounded-lg bg-gradient-to-r from-purple-400 to-pink-500 font-medium">
-          Connect Wallet
+        <button class="px-6 py-2 rounded-lg btn-primary font-medium orbitron">
+            Connect Wallet
         </button>
-      </header>
+    </header>
 
-      {/* Main Content */}
-      <main className="container mx-auto px-6 lg:px-12 py-8">
-        {/* Global Stats */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6">Global Statistics</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-              <h3 className="text-gray-400 mb-1">Current Yield</h3>
-              <p className="text-3xl font-bold">8.24%</p>
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 lg:px-12 py-8">
+        <!-- Global Stats Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 orbitron">Global Statistics</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <!-- Yield Card -->
+                <div class="stat-card p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-gray-400 mb-1">Current Yield</h3>
+                            <p class="text-3xl font-bold">8.24<span class="text-xl">%</span></p>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="time-selector-btn px-3 py-1 rounded-md text-sm active">1W</button>
+                            <button class="time-selector-btn px-3 py-1 rounded-md text-sm">1M</button>
+                            <button class="time-selector-btn px-3 py-1 rounded-md text-sm">ALL</button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-placeholder" style="height: 70%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 50%; width: 90%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 80%; width: 95%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 65%; width: 85%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 90%; width: 100%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 75%; width: 92%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 60%; width: 88%"></div>
+                    </div>
+                </div>
+                
+                <!-- TVL Card -->
+                <div class="stat-card p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-gray-400 mb-1">Total Value Locked</h3>
+                            <p class="text-3xl font-bold">$24.7<span class="text-xl">M</span></p>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="time-selector-btn px-3 py-1 rounded-md text-sm active">1W</button>
+                            <button class="time-selector-btn px-3 py-1 rounded-md text-sm">1M</button>
+                            <button class="time-selector-btn px-3 py-1 rounded-md text-sm">ALL</button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-placeholder" style="height: 80%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 60%; width: 90%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 75%; width: 95%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 85%; width: 85%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 70%; width: 100%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 90%; width: 92%"></div>
+                        <div class="chart-placeholder mt-1" style="height: 65%; width: 88%"></div>
+                    </div>
+                </div>
             </div>
-            <div className="bg-gray-900 p-6 rounded-lg shadow-lg">
-              <h3 className="text-gray-400 mb-1">Total Value Locked</h3>
-              <p className="text-3xl font-bold">$24.7M</p>
-            </div>
-          </div>
         </section>
-      </main>
+        
+        <div class="divider my-8"></div>
+        
+        <!-- Personal Stats Section -->
+        <section>
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold orbitron">Your Statistics</h2>
+                <button class="px-6 py-2 rounded-lg btn-primary font-medium orbitron">
+                    Connect Wallet
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Your Investment Card -->
+                <div class="stat-card p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-gray-400 mb-1">Your Investment</h3>
+                            <p class="text-3xl font-bold">$0.00</p>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="time-selector-btn px-3 py-1 rounded-md text-sm active">1W</button>
+                            <button class="time-selector-btn px-3 py-1 rounded-md text-sm">1M</button>
+                            <button class="time-selector-btn px-3 py-1 rounded-md text-sm">ALL</button>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="absolute inset-0 flex items-center justify-center connect-wallet-text">
+                            Connect wallet to view data
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Your Rewards Card -->
+                <div class="stat-card p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-gray-400 mb-1">Your Rewards</h3>
+                            <p class="text-3xl font-bold">$0.00</p>
+                            <p class="text-accent-secondary text-sm mt-1">+0.00% today</p>
+                        </div>
+                        <button class="px-4 py-2 rounded-lg btn-secondary font-medium opacity-50 cursor-not-allowed">
+                            Claim
+                        </button>
+                    </div>
+                    <div class="chart-container">
+                        <div class="absolute inset-0 flex items-center justify-center connect-wallet-text">
+                            Connect wallet to view data
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-      {/* Footer */}
-      <footer className="py-8 px-4 bg-gray-900/30 backdrop-blur-sm border-t border-gray-800/50">
-        <div className="text-center text-gray-400">
-          © 2025 Cappi Finance. All rights reserved.
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-8 lg:px-16 border-t border-gray-800/50 bg-gray-900/30 backdrop-blur-sm">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="text-gray-400">© 2025 Cappi Finance. All rights reserved.</p>
+            </div>
+            
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-purple-300 transition hover:drop-shadow-[0_0_5px_rgba(183,148,244,0.5)]">Twitter</a>
+                <a href="#" class="text-gray-400 hover:text-pink-300 transition hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.5)]">Medium</a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
+            </div>
         </div>
-      </footer>
-    </div>
+    </footer>
+  
   );
 }
 
