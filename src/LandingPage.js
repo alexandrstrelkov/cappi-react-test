@@ -3,33 +3,93 @@ import {Link} from "react-router-dom";
 
 const LandingPage = () => {
   return (
-    <div class="container">
-        <div class="header">Cappi Finance</div>
-        <div class="subheader">Earn stable income in USDC with daily rewards.</div>
 
+    <body class="min-h-screen flex flex-col">
+    <!-- Header with soft glow -->
+    <header class="py-6 px-4 sm:px-8 lg:px-16 flex justify-between items-center bg-gray-900/50 backdrop-blur-sm header-glow">
+        <div class="flex items-center space-x-2 glow-effect">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="20" fill="url(#logo-gradient)"/>
+                <path d="M25 15C25 17.7614 22.7614 20 20 20C17.2386 20 15 17.7614 15 15C15 12.2386 17.2386 10 20 10C22.7614 10 25 12.2386 25 15Z" fill="#A5B4FC"/>
+                <path d="M25 25C25 27.7614 22.7614 30 20 30C17.2386 30 15 27.7614 15 25C15 22.2386 17.2386 20 20 20C22.7614 20 25 22.2386 25 25Z" fill="#818CF8"/>
+                <circle cx="16" cy="15" r="1" fill="#312E81"/>
+                <circle cx="24" cy="15" r="1" fill="#312E81"/>
+                <path d="M18 18C18 19.1046 18.8954 20 20 20C21.1046 20 22 19.1046 22 18C22 16.8954 21.1046 16 20 16C18.8954 16 18 16.8954 18 18Z" fill="#312E81"/>
+                <defs>
+                    <linearGradient id="logo-gradient" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#8B5CF6"/>
+                        <stop offset="50%" stop-color="#D946EF"/>
+                        <stop offset="100%" stop-color="#8B5CF6"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span class="text-2xl font-bold gradient-text bg-gradient-to-r from-purple-400 to-pink-400 orbitron">Cappi Finance</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 sm:px-8 lg:px-16 py-12">
         <div class="content-box">
-            <p><Link to="/app" class="button">App Coming Soon!</Link></p>
-            <a href="https://forms.gle/9CKjB4PDa3qJxCwE9" class="whitelist-text" target="_blank" rel="noopener noreferrer">Whitelist Registration</a>
+            <h1 class="text-4xl sm:text-5xl font-bold mb-6 neon-text gradient-text bg-gradient-to-r from-purple-300 to-pink-300 text-center orbitron">
+                Earn Stable Daily Rewards with Cappi Finance
+            </h1>
+            <p class="text-lg text-gray-300 mb-8 text-center max-w-2xl mx-auto">
+                Fixed price. Predictable income. Join the Cappi community and start earning passive rewards with our innovative DeFi solution.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+                <button class="px-8 py-3 rounded-xl btn-primary font-bold text-gray-900 neon-accent orbitron">
+                    Launch App
+                </button>
+                <button class="px-8 py-3 rounded-xl btn-secondary font-medium glow-effect orbitron">
+                    Whitepaper
+                </button>
+            </div>
         </div>
+    </main>
 
-        <div class="footer-text">
-            Cappi Finance — a crypto project with USDC income with daily staking rewards. Join now and secure your daily earnings.
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-8 lg:px-16 border-t border-gray-800/50 bg-gray-900/30 backdrop-blur-sm">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="text-gray-400">© 2025 Cappi Finance. All rights reserved.</p>
+            </div>
+            
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-purple-300 transition hover:drop-shadow-[0_0_5px_rgba(183,148,244,0.5)]">Twitter</a>
+                <a href="#" class="text-gray-400 hover:text-pink-300 transition hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.5)]">Medium</a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
+            </div>
         </div>
+    </footer>
 
-    <div className="bg-blue-500 text-white p-4 rounded-lg">
-      Tailwind работает!
-    </div>
-    <h1 class="text-4xl sm:text-5xl font-bold mb-6 neon-text gradient-text bg-gradient-to-r from-purple-300 to-pink-300 text-center orbitron">
-        Earn Stable Daily Rewards with Cappi Finance
-    </h1>
-
-        <div class="social-links">
-          <a href="https://medium.com/@cappifi24/cappifi-capi-whitepaper-roadmap-51b2ae85fc54" target="_blank" rel="noopener noreferrer">Whitepaper</a>
-          <a href="https://x.com/CappiFinance" target="_blank" rel="noopener noreferrer">Twitter (X)</a>
-          <a href="https://medium.com/@cappifi24" target="_blank" rel="noopener noreferrer">Medium</a>
-          <a href="https://t.me/cappifi" target="_blank" rel="noopener noreferrer">Telegram</a>
-        </div>
-    </div>
+    <script>
+        // Enhanced hover effects with glow
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                el.style.transform = 'translateY(-2px)';
+                if(el.classList.contains('neon-accent') || el.classList.contains('social-icon')) {
+                    el.style.filter = 'drop-shadow(0 0 10px rgba(139, 92, 246, 0.6))';
+                }
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = '';
+                el.style.filter = '';
+            });
+        });
+        
+        // Background animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.querySelector('body');
+            let hue = 270;
+            
+            setInterval(() => {
+                hue = (hue + 0.1) % 360;
+                body.style.background = `linear-gradient(135deg, hsl(${Math.min(hue, 280)}, 70%, 45%) 0%, hsl(${Math.max((hue + 40) % 360, 330)}, 70%, 55%) 100%)`;
+            }, 50);
+        });
+    </script>
+</body>
+    
   );
 };
 
