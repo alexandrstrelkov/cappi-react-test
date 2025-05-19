@@ -4,7 +4,7 @@ import "./app-style.css";
 import "./app-script.js";
 
 function App() {
-  useEffect(() => {
+  useEffect(() 
     // Скрипт подключается и запускается здесь
     import("./app-script.js").then((module) => {
       module.default();
@@ -26,6 +26,7 @@ function App() {
             Connect Wallet
         </button>
     </header>
+    </div>
 
     <main class="container mx-auto px-6 lg:px-12 py-8">
         <section class="mb-12">
