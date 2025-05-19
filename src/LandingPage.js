@@ -34,14 +34,17 @@ const LandingPage = () => {
                 Earn Stable Daily Rewards with Cappi Finance
             </h1>
             <p class="text-lg text-gray-300 mb-8 text-center max-w-2xl mx-auto">
-                Fixed price. Predictable income. Join the Cappi community and start earning passive rewards with our innovative DeFi solution.
+                Fixed price. Predictable income.
+            </p>
+            <p class="text-lg text-gray-300 mb-8 text-center max-w-2xl mx-auto">
+                Join the Cappi community and start earning passive rewards with our innovative DeFi solution.
             </p>
             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-                <button class="px-8 py-3 rounded-xl btn-primary font-bold text-gray-900 neon-accent orbitron">
+                <Link to="/App" class="px-8 py-3 rounded-xl btn-primary font-bold text-gray-900 neon-accent orbitron">
                     Launch App
-                </button>
+                </Link>
                 <button class="px-8 py-3 rounded-xl btn-secondary font-medium glow-effect orbitron">
-                    Whitepaper
+                    <a href="#" target="_blank" rel="noopener noreferrer">Whitepaper</a>
                 </button>
             </div>
         </div>
@@ -54,9 +57,9 @@ const LandingPage = () => {
             </div>
             
             <div class="flex space-x-6">
-                <a href="#" class="text-gray-400 hover:text-purple-300 transition hover:drop-shadow-[0_0_5px_rgba(183,148,244,0.5)]">Twitter</a>
-                <a href="#" class="text-gray-400 hover:text-pink-300 transition hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.5)]">Medium</a>
-                <a href="#" class="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-purple-300 transition hover:drop-shadow-[0_0_5px_rgba(183,148,244,0.5)]">Twitter</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-300 transition hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.5)]">Medium</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]">Telegram</a>
             </div>
         </div>
     </footer>
