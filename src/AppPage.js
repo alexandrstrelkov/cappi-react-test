@@ -17,19 +17,21 @@ function App() {
     });
     
     fetch("/profit.json")
-      fetch("/public/profit.json")
-      .then((res) => res.json())
-      .then((data) => {
+    .then((res) => res.json())
+    .then((data) => {
       setChartData(data);
 
-      // Вычислить среднюю доходность по последним 7 значениям
       const last7 = data.slice(-7);
-      const avg = last7.reduce((sum, item) => sum + item.profit, 0) / last7.length;
-
-      // округление до 2 знаков после запятой
-      setAverageYield(avg.toFixed(2));
+      if (last7.length > 0) {
+        const avg = last7.reduce((sum, item) => sum + item.profit, 0) / last7.length;
+        setAverageYield(avg.toFixed(2));
+      } else {
+        setAverageYield("0.00");
+      }
     })
-    .catch((err) => console.error("Ошибка загрузки данных:", err));
+    .catch((err) => {
+      console.error("Ошибка загрузки данных:", err);
+      setAverageYield("0.00");
   }, []);
   
   return (
