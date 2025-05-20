@@ -56,7 +56,6 @@ function App() {
                     </div>
                     <div className="chart-container">
                         <div className="p-4">
-                          <h2 className="text-xl font-bold mb-4">График доходности</h2>
                             <Dashboard chartData={chartData} />
                         </div>
                     </div>
