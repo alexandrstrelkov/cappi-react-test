@@ -14,7 +14,7 @@ function App() {
       }
     });
     
-    fetch("/public/profit.json")
+    fetch("/profit.json")
       .then((res) => res.json())
       .then((data) => setChartData(data))
       .catch((err) => console.error("Ошибка загрузки данных:", err));
