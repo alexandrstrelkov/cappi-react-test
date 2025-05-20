@@ -2,6 +2,7 @@
 import {useEffect, useState} from "react";
 import "./index.css";
 import "./app-style.css";
+import Dashboard from "./Dashboard";
 import ProfitChart from "../ProfitChart";
 
 function App() {
@@ -11,12 +12,7 @@ function App() {
         module.default(); // initScripts()
       }
     });
-  }, []);
-
-const Dashboard = () => {
-  const [chartData, setChartData] = useState([]);
-
-  useEffect(() => {
+    
     fetch("/public/profit.json")
       .then((res) => res.json())
       .then((data) => setChartData(data))
@@ -60,7 +56,7 @@ const Dashboard = () => {
                     <div className="chart-container">
                         <div className="p-4">
                           <h2 className="text-xl font-bold mb-4">График доходности</h2>
-                          <ProfitChart data={chartData} />
+                            <Dashboard chartData={chartData} />
                         </div>
                     </div>
                 </div>
