@@ -7,6 +7,8 @@ import ProfitChart from "./ProfitChart";
 
 function App() {
   const [chartData, setChartData] = useState([]);
+  const [averageYield, setAverageYield] = useState(null);
+  
   useEffect(() => {
     import("./app-script.js").then((module) => {
       if (module.default) {
@@ -15,9 +17,19 @@ function App() {
     });
     
     fetch("/profit.json")
+      fetch("/public/profit.json")
       .then((res) => res.json())
-      .then((data) => setChartData(data))
-      .catch((err) => console.error("Ошибка загрузки данных:", err));
+      .then((data) => {
+      setChartData(data);
+
+      // Вычислить среднюю доходность по последним 7 значениям
+      const last7 = data.slice(-7);
+      const avg = last7.reduce((sum, item) => sum + item.profit, 0) / last7.length;
+
+      // округление до 2 знаков после запятой
+      setAverageYield(avg.toFixed(2));
+    })
+    .catch((err) => console.error("Ошибка загрузки данных:", err));
   }, []);
   
   return (
@@ -46,7 +58,7 @@ function App() {
                     <div className="flex justify-between items-start mb-4">
                         <div>
                             <h3 className="text-gray-400 mb-1">Current Yield</h3>
-                            <p className="text-3xl font-bold">8.24<span className="text-xl">%</span></p>
+                            <p className="text-3xl font-bold">{averageYield !== null ? averageYield : '...'}<span className="text-xl">%</span></p>
                         </div>
                         <div className="flex space-x-2">
                             <button className="time-selector-btn px-3 py-1 rounded-md text-sm active" data-time-selector>1W</button>
