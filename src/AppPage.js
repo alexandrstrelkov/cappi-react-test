@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import "./index.css";
 import "./app-style.css";
 import Dashboard from "./Dashboard";
-import ProfitChart from "../ProfitChart";
+import ProfitChart from "./ProfitChart";
 
 function App() {
   useEffect(() => {
