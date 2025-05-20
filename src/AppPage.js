@@ -1,7 +1,7 @@
-import {useEffect} from "react";
+//import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import "./index.css";
 import "./app-style.css";
-import {useEffect, useState} from "react";
 import ProfitChart from "../ProfitChart";
 
 function App() {
