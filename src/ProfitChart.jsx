@@ -1,3 +1,4 @@
+import React, { useMemo } from "react";
 import {
   LineChart,
   Line,
@@ -9,10 +10,22 @@ import {
 } from "recharts";
 
 const ProfitChart = ({ data }) => {
+  // считаем накопительный профит с помощью useMemo, чтобы не пересчитывать при каждом рендере без изменения data
+  const cumulativeData = useMemo(() => {
+    let cumulativeSum = 0;
+    return data.map(item => {
+      cumulativeSum += item.profit;
+      return {
+        ...item,
+        cumulativeProfit: cumulativeSum,
+      };
+    });
+  }, [data]);
+
   return (
     <div className="w-full h-[300px]">
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data}>
+        <LineChart data={cumulativeData}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
           <YAxis
@@ -24,7 +37,7 @@ const ProfitChart = ({ data }) => {
           />
           <Line
             type="monotone"
-            dataKey="profit"
+            dataKey="cumulativeProfit"  // отображаем накопительный профит
             stroke="#8884d8"
             strokeWidth={2}
           />
