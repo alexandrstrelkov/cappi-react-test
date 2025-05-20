@@ -9,14 +9,14 @@ function App() {
   const [chartData, setChartData] = useState([]);
   const [averageYield, setAverageYield] = useState(null);
   
-  useEffect(() => {
-    import("./app-script.js").then((module) => {
-      if (module.default) {
-        module.default(); // initScripts()
-      }
-    });
-    
-    fetch("/profit.json")
+useEffect(() => {
+  import("./app-script.js").then((module) => {
+    if (module.default) {
+      module.default(); // initScripts()
+    }
+  });
+
+  fetch("/profit.json")
     .then((res) => res.json())
     .then((data) => {
       setChartData(data);
@@ -32,7 +32,8 @@ function App() {
     .catch((err) => {
       console.error("Ошибка загрузки данных:", err);
       setAverageYield("0.00");
-  }, []);
+    });
+}, []);
   
   return (
     <>
