@@ -16,10 +16,10 @@ const ProfitChart = ({ data }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
           <YAxis
-            tickFormatter={(value) => `${value}%`}
+            tickFormatter={(value) => `${value.toFixed(2)}%`}
           />
           <Tooltip
-            formatter={(value) => [`${value}%`, "Profit"]}
+            formatter={(value) => `${value.toFixed(2)}%`}
             labelFormatter={(label) => `Date: ${label}`}
           />
           <Line
