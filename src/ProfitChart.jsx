@@ -15,9 +15,19 @@ const ProfitChart = ({ data }) => {
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
-          <YAxis />
-          <Tooltip />
-          <Line type="monotone" dataKey="profit" stroke="#8884d8" strokeWidth={2} />
+          <YAxis
+            tickFormatter={(value) => `${value}%`}
+          />
+          <Tooltip
+            formatter={(value) => [`${value}%`, "Profit"]}
+            labelFormatter={(label) => `Date: ${label}`}
+          />
+          <Line
+            type="monotone"
+            dataKey="profit"
+            stroke="#8884d8"
+            strokeWidth={2}
+          />
         </LineChart>
       </ResponsiveContainer>
     </div>
