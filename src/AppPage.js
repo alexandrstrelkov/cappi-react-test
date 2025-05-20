@@ -6,6 +6,7 @@ import Dashboard from "./Dashboard";
 import ProfitChart from "./ProfitChart";
 
 function App() {
+  const [chartData, setChartData] = useState([]);
   useEffect(() => {
     import("./app-script.js").then((module) => {
       if (module.default) {
