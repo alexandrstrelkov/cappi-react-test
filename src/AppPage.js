@@ -23,11 +23,12 @@ useEffect(() => {
 
       const last7 = data.slice(-7);
       if (last7.length > 0) {
-        const avg = last7.reduce((sum, item) => sum + item.profit, 0) / last7.length;
-        setAverageYield(avg.toFixed(2));
+        const sum = last7.reduce((sum, item) => sum + item.profit, 0);
+        setAverageYield(sum.toFixed(2));
       } else {
-        setAverageYield("0.00");
+        setAverageYield("0.00"); 
       }
+
     })
     .catch((err) => {
       console.error("Ошибка загрузки данных:", err);
