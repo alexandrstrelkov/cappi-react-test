@@ -1,6 +1,8 @@
 import {useEffect} from "react";
 import "./index.css";
 import "./app-style.css";
+import {useEffect, useState} from "react";
+import ProfitChart from "../ProfitChart";
 
 function App() {
   useEffect(() => {
@@ -11,6 +13,16 @@ function App() {
     });
   }, []);
 
+const Dashboard = () => {
+  const [chartData, setChartData] = useState([]);
+
+  useEffect(() => {
+    fetch("/public/profit.json")
+      .then((res) => res.json())
+      .then((data) => setChartData(data))
+      .catch((err) => console.error("Ошибка загрузки данных:", err));
+  }, []);
+  
   return (
     <>
     <div className="min-h-screen bg-gradient-to-r from-purple-600 to-pink-500 text-white">
@@ -46,13 +58,10 @@ function App() {
                         </div>
                     </div>
                     <div className="chart-container">
-                        <div className="chart-placeholder" style={{height: "70%"}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: "50%", width: "90%"}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: "80%", width: "95%"}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: "65%", width: "85%"}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: "90%", width: "100%"}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: "75%", width: "92%"}}></div>
-                        <div className="chart-placeholder mt-1" style={{height: "60%", width: "88%"}}></div>
+                        <div className="p-4">
+                          <h2 className="text-xl font-bold mb-4">График доходности</h2>
+                          <ProfitChart data={chartData} />
+                        </div>
                     </div>
                 </div>
                 
