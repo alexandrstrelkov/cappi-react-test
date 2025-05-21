@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import AppPage from "./AppPage";
 import './style.css';
-import Dashboard from "./Dashboard";
+import ProfitChart from "./ProfitChart";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         </Routes>
       </div>
       <div className="chart-container w-full h-[300px]">
-        <Dashboard chartData={chartData} />
+        <ProfitChart data={chartData} />
       </div>
     </Router>
   );
