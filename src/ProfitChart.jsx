@@ -9,7 +9,6 @@ import {
 } from "recharts";
 
 const ProfitChart = ({ data }) => {
-  // Считаем накопительный профит
   const cumulativeData = data.map((item, index) => ({
     ...item,
     profit: data.slice(0, index + 1).reduce((sum, d) => sum + d.profit, 0)
@@ -24,9 +23,7 @@ const ProfitChart = ({ data }) => {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="date" />
-          <YAxis
-            tickFormatter={(value) => `${value.toFixed(2)}%`}
-          />
+          <YAxis tickFormatter={(value) => `${value.toFixed(2)}%`} />
           <Tooltip
             formatter={(value) => `${value.toFixed(2)}%`}
             labelFormatter={(label) => `Date: ${label}`}
