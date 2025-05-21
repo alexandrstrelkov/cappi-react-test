@@ -72,7 +72,7 @@ useEffect(() => {
                     </div>
                     <div className="chart-container w-full h-[300px] relative overflow-hidden">
                         <div className="p-4">
-                            <Dashboard chartData={chartData} />
+                            <ProfitChart data={chartData} />
                         </div>
                     </div>
                 </div>
