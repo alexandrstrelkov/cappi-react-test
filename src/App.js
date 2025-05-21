@@ -13,6 +13,9 @@ function App() {
           <Route path="/app" element={<AppPage />} />
         </Routes>
       </div>
+      <div className="chart-container w-full h-[300px]">
+        <Dashboard chartData={chartData} />
+      </div>
     </Router>
   );
 }
