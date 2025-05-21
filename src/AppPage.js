@@ -55,27 +55,26 @@ useEffect(() => {
 
     <main className="container mx-auto px-6 lg:px-12 py-8">
         <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6 orbitron">Global Statistics</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div className="stat-card p-6">
-                    <div className="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 className="text-gray-400 mb-1">Current Yield</h3>
-                            <p className="text-3xl font-bold">{averageYield !== null ? averageYield : '...'}<span className="text-xl">%</span></p>
-                        </div>
-                        <div className="flex space-x-2">
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm active" data-time-selector>1W</button>
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm" data-time-selector>1M</button>
-                            <button className="time-selector-btn px-3 py-1 rounded-md text-sm" data-time-selector>ALL</button>
-                        </div>
-                    </div>
-                    <div className="chart-container w-full h-[300px] relative overflow-hidden">
-                        <div className="p-4">
-                            <ProfitChart data={chartData} />
-                        </div>
-                    </div>
+          <h2 className="text-2xl font-bold mb-6 orbitron">Global Statistics</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="stat-card p-6">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h3 className="text-gray-400 mb-1">Current Yield</h3>
+                  <p className="text-3xl font-bold">
+                    {averageYield !== null ? averageYield : "..."}
+                    <span className="text-xl">%</span>
+                  </p>
                 </div>
+              </div>
+
+              <div className="chart-container w-full h-[300px] relative overflow-hidden">
+                <ProfitChart data={chartData} />
+              </div>
+            </div>
+          </div>
+        </section>
                 
                 <div className="stat-card p-6">
                     <div className="flex justify-between items-start mb-4">
