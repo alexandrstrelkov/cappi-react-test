@@ -70,7 +70,7 @@ useEffect(() => {
                             <button className="time-selector-btn px-3 py-1 rounded-md text-sm" data-time-selector>ALL</button>
                         </div>
                     </div>
-                    <div className="chart-container">
+                    <div className="chart-container w-full h-[300px] relative overflow-hidden">
                         <div className="p-4">
                             <Dashboard chartData={chartData} />
                         </div>
